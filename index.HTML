@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porsche 3D Scroll Animation</title>
+  <link rel="stylesheet" href="/style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/911-porscha" rel="stylesheet">
+</head>
+<body>
+
+
+  <div id="loader">
+    <div class="spinner"></div>
+    <p>La nouvelle 911 est là ...</p>
+  </div>
+
+
+  <section id="hero">
+    <img src="/assets/photo/couverture.png" alt="Porsche" id="logo1">
+    <img src="/assets/photo/logo_porsche.png" alt="Logo Porsche" id="logo2">
+  </section>
+
+
+  <section id="car-section">
+    <img src="/assets/photo/turbo_s_logo.png" alt="Logo" id="logo_turbo">
+    <model-viewer
+      src="/assets/models/2021_porsche_911_turbo_s_992.glb"
+      alt="Porsche 911 Turbo S"
+      exposure="0.7"
+      id="car"
+      shadow-intensity="0.5">
+    </model-viewer>
+  </section>
+
+  <section id="spe">
+    <span id="spec">322 km/h</span><br>
+    <span id="spec">711 ch</span><br>
+    <span id="spec">2.5 sec</span><br><br>
+  </section>
+
+<div id="icone">
+  <h1 id="icon1">Sans équivalent</h1>
+  <h3 id="icont"><br>Une aura, une présence. Un frisson sans limite. La 911 Turbo S n’a <br> pas d’équivalent, délivrant des performances époustouflantes dans <br>une sérénité totale. Le rêve d’une Porsche 911 poussée à l’extrême.</h3>
+  <img src="/assets/photo/fast_photo.jpg" alt="Logo" id="font_txt">
+</div>
+
+
+<div id="icone">
+    <img src="/assets/photo/sound_photo.png" alt="porsche" id="porsche_sound">
+    <button class="moteur" id="btnMoteur">ÉCOUTER LE MOTEUR <br> (maintenir)</button>
+<audio id="soundMoteur" src="/assets/sound/911-turbo.wav" preload="auto"></audio>
+</div>
+
+
+
+
+<footer id="footer">
+  <img src="/assets/photo/logo_porsche.png" alt="Logo Porsche" id="footer-logo">
+  <p href="https://github.com/elbaz-sofiane" >Design and code by <strong>Sofiane.E </strong></p>
+  <div class="social-links">
+    <a href="https://github.com/elbaz-sofiane" target="_blank">GitHub</a> |
+    <a href="https://www.linkedin.com/in/sofiane-elbaz/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+
+  <script src="/script.js"></script>
+</body>
+</html>
