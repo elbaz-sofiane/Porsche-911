@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accès PC requis</title>
+<style>
+  /* Fullscreen overlay responsive */
+  body {
+    margin: 0;
+    font-family: '911 Porscha', sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+    padding: 5vw;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 20vw;
+    max-width: 120px;
+    height: auto;
+    opacity: 0.85;
+    margin-bottom: 2vh;
+  }
+
+  .pc-icon {
+    font-size: 8vw;
+    max-font-size: 50px;
+    color: #ff0000;
+    margin: 2vh 0 3vh;
+    animation: pulse 1.5s infinite alternate;
+  }
+
+  h1 {
+    font-size: 4vw;
+    max-font-size: 28px;
+    color: #ff0000;
+    margin-bottom: 1.5vh;
+    letter-spacing: 1px;
+    line-height: 1.2;
+  }
+
+  p {
+    font-size: 3vw;
+    max-font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  @keyframes pulse {
+    from { opacity: 0.5; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1.05); }
+  }
+</style>
+</head>
+<body>
+  <img src="/assets/photo/logo_porsche.png" alt="Porsche">
+  <div class="pc-icon">💻</div>
+  <h1>Accès depuis un ordinateur requis</h1>
+  <p>
+    Cette expérience 3D Porsche 911 est optimisée pour un affichage sur ordinateur.<br>
+    Merci de vous reconnecter depuis un PC pour profiter pleinement du rendu.
+  </p>
+</body>
+</html>
