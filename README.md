@@ -29,6 +29,7 @@ Ce projet propose une navigation visuelle et auditive, avec une interaction au *
 | **3D** | [Model-Viewer (Google)](https://modelviewer.dev) |
 | **Police** | 911 Porscha |
 | **Design** | Noir & rouge (inspiration Porsche) |
+| **Image** | Photoshop afin d'avoir les bon formats |
 
 ---
 
