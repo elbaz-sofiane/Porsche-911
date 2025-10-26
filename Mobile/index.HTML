@@ -1,0 +1,73 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Porsche — 3D Scroll Experience</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
+</head>
+<body>
+
+  <div id="loader" role="status" aria-live="polite">
+    <div class="spinner" aria-hidden="true"></div>
+    <div>Chargement…</div>
+  </div>
+
+  <main>
+    <header>
+      <div class="hero-inner">
+        <img src="assets/photo/logo_porsche.png" alt="Porsche" class="hero-logo">
+        <h1 class="hero-title">Force intérieure, Élégance extérieure</h1>
+        <p class="hero-sub">La 911 Turbo S : une présence, des performances et un design maîtrisé.</p>
+      </div>
+    </header>
+
+    <section class="car-section" id="car-section">
+      <img src="assets/photo/turbo_s_logo.png" alt="Turbo S logo" class="turbo-logo" id="turboLogo" />
+      <model-viewer id="carModel"
+        src="assets/models/2021_porsche_911_turbo_s_992.glb"
+        alt="Porsche 911 Turbo S"
+        camera-orbit="0deg 75deg 1.5m"
+        exposure="0.7"
+        shadow-intensity="0.6"
+        interaction-prompt="none"
+        ar
+        ar-modes="webxr scene-viewer quick-look">
+      </model-viewer>
+
+      <div class="specs">
+        <div class="spec">| 322 km/h |</div>
+        <div class="spec"> 711 ch </div>
+        <div class="spec">| 0–100 : 2.5 s |</div>
+      </div>
+
+      <div class="sound-control">
+        <button class="btn-sound" id="btnSound" aria-pressed="false">Écouter le moteur (maintenir)</button>
+        <audio id="engineSound" src="assets/sound/911-turbo.wav" preload="auto"></audio>
+      </div>
+    </section>
+
+    <section class="info" aria-labelledby="infoTitle">
+      <div>
+        <h2 id="infoTitle">Sans équivalent</h2>
+        <p>Une aura, une présence. Un frisson sans limite. La 911 Turbo S combine performance extrême et sérénité, offrant une expérience de conduite rare.</p>
+      </div>
+      <div class="image" style="background-image:url('assets/photo/img_19.webp')"></div>
+    </section>
+
+    <footer>
+      <img src="assets/photo/logo_porsche.png" alt="Porsche" class="footer-logo">
+      <div>Design and code by <strong>Sofiane.E</strong></div>
+      <div class="social-links">
+        <a href="https://github.com/elbaz-sofiane" target="_blank" rel="noopener">GitHub</a> • 
+        <a href="https://www.linkedin.com/in/sofiane-elbaz/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
